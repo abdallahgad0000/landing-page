@@ -51,6 +51,7 @@ let navbarLinks = document.getElementById("navbarLinks");
     nextSibling = nextSibling.nextElementSibling;
   }
   let previousSibling = section.previousElementSibling;
+  previousSibling.classList.remove("active");
   while(previousSibling){
     previousSibling.classList.remove("active");
     previousSibling = previousSibling.previousElementSibling;

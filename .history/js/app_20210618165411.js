@@ -46,11 +46,13 @@ let navbarLinks = document.getElementById("navbarLinks");
  
  function removeActiveFromSiblings(section) {
   let nextSibling = section.nextElementSibling;
+  nextSibling.classList.remove("active");
   while(nextSibling){
     nextSibling.classList.remove("active");
     nextSibling = nextSibling.nextElementSibling;
   }
   let previousSibling = section.previousElementSibling;
+  previousSibling.classList.remove("active");
   while(previousSibling){
     previousSibling.classList.remove("active");
     previousSibling = previousSibling.previousElementSibling;
